@@ -1,7 +1,7 @@
 function GetValues(){
 	window.firstNumber = parseInt(document.getElementById('firstNumber').value);
 	window.secondNumber = parseInt(document.getElementById('secondNumber').value);
-	window.operationSign = parseInt(document.getElementById('operationSign').value);
+	window.operationSign = document.getElementById('operationSign').value;
 }
 
 function CalculateResult(a){
