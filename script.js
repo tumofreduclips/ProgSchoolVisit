@@ -11,7 +11,6 @@ function CalculateResult(a){
 function Initialize(){
 	document.getElementById('calculate').onclick = function(){
 		GetValues();
-		Calculate();
 	}
 }
 
