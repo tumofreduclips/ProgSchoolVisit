@@ -1,10 +1,18 @@
-var firstNumber = document.getElementById('firstNumber').value;
-var secondNumber = document.getElementById('secondNumber').value;
-var operationSign = document.getElementById('operationSign').value;
+function GetValues(){
+	window.firstNumber = parseInt(document.getElementById('firstNumber').value);
+	window.secondNumber = parseInt(document.getElementById('secondNumber').value);
+	window.operationSign = parseInt(document.getElementById('operationSign').value);
+}
 
+function CalculateResult(a){
+	document.getElementById('result').value = a;
+}
 
+function Initialize(){
+	document.getElementById('calculate').onclick = function(){
+		GetValues();
+		Calculate();
+	}
+}
 
-
-console.log(firstNumber);
-console.log(secondNumber);
-console.log(operationSign);
+Initialize();
